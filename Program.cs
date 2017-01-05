@@ -12,7 +12,7 @@ namespace ConsoleApplication
         public static void Main(string[] args)
         {
             var configuration = Configure();
-            IoC.Initialize(configuration);
+            IoC.ConfigureServices(configuration);
             ConfigureLogger();
 
             var service = IoC.Services.GetService<IMyService>();

@@ -5,11 +5,11 @@ using ConsoleApplication.Services;
 
 namespace ConsoleApplication
 {
-    public class IoC
+    public static class IoC
     {
         public static IServiceProvider Services { get; private set; }
 
-        public static void Initialize(IConfiguration configuration)
+        public static void ConfigureServices(IConfiguration configuration)
         {
             IServiceCollection services = new ServiceCollection();
 
